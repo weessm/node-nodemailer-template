@@ -1,30 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{subject}}</title>
+{{> head}}
+{{> style}}
+    <header>
+    <h1>Equipe X</h1>
+    </header>
 
-  <style>
-    h1{color: red;}
-  </style>
-
-</head>
-<body>
-
-  <div>
-    <div>
-      <h1>Bem-Vindo! {{name}}</h1>
-    </div>
-
-    <div>
-      <p>Estamos felizes em ter você conosco.</p>
-      <p>Esta é uma plataforma para envio de trabalhos dos alunos do COLCIC.</p>
-      <p>Esta é sua senha provisória: <strong>{{senha}}</strong></p>
-      <p>Altere em: <a href="{{link}}" target="_blank">{{link}}</a></p>
-    </div>
-  </div>
-
-</body>
-</html>
+    <section>
+      <p>Olá {{name}}!</p>
+      <p>Você realizou o cadastro na nossa plataforma recentemente</p>
+      <p>Esta é sua senha provisória {{senha}}</p>
+      <p>Acesse e altere em {{link}}</p>
+    </section>
+{{> footer}}
